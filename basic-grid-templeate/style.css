@@ -1,0 +1,22 @@
+
+
+.grid {
+    display: grid;
+    /* ancho de las colmunas y cantidades */
+    grid-template-columns: 33% 33% 33%;
+    /* tamaño de las filas */
+    grid-template-rows: auto 200px 300px;
+
+    /* separación */
+    gap: 1em;
+    /* solo columas  */
+    /* column-gap: 1em; */
+    /* filas  */
+    /* row-gap: 1em; */
+}
+
+.grid > div {
+    background: burlywood;
+    padding: 20px;
+    border: 1px solid black;
+}

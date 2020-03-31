@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(130px, auto);
+    gap: 1em;
+
+}
+
+.grid > div {
+    background: burlywood;
+    border: 1px solid black;    
+    padding: 20px;
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    /* alto por defecto de las filas     */
+    grid-auto-rows: 50px;
+}
+
+.nested-grid > div {
+    border: 1px solid black;
+    background: blueviolet;
+}
